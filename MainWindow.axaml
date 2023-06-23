@@ -1,0 +1,57 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="1050" d:DesignHeight="700"
+        x:Class="Dual.MainWindow"
+        TransparencyLevelHint="Transparent"
+        Background="Transparent"
+        SystemDecorations="None">
+    
+    <Border
+        Background="White"
+        CornerRadius="40"
+        PointerPressed="DragEvent">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="220"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="100"/>
+            </Grid.RowDefinitions>
+
+            <!-- 菜单 -->
+
+            <Border
+                Background="#8AFCF3"
+                CornerRadius="40 0 0 40"
+                Grid.RowSpan="2">
+                <StackPanel
+                    Margin="0 30 0 0">
+                    <StackPanel
+                        Orientation="Horizontal"
+                        HorizontalAlignment="Left"
+                        Margin="60 10 0 10">
+                        <Ellipse
+                            Fill="White"
+                            Width="10"
+                            Height="10"/>
+                        <Ellipse
+                            Fill="White"
+                            Width="10"
+                            Height="10"
+                            Margin="5 0"/>
+                        <Ellipse
+                            Fill="White"
+                            Width="10"
+                            Height="10"/>
+                    </StackPanel>
+                </StackPanel>
+            </Border>
+        </Grid>
+    </Border>
+</Window>
