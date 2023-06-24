@@ -4,6 +4,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d" d:DesignWidth="1050" d:DesignHeight="700"
         x:Class="Dual.MainWindow"
+        Icon="/Assets/avalonia-logo.ico"
         TransparencyLevelHint="Transparent"
         Background="Transparent"
         SystemDecorations="None">
@@ -50,6 +51,75 @@
                             Width="10"
                             Height="10"/>
                     </StackPanel>
+                    <TextBlock
+                        Text="目录"
+                        Classes="Title"/>
+                    <Button
+                        Classes="Menu">
+                        <Grid>
+                            <TextBlock
+                                Text="我超！冰！"
+                                Margin="8 0 0 2"/>
+                            <Image
+                                Source="/Assets/Images/arrow.png"
+                                Classes="Menu"/>
+                        </Grid>
+                    </Button>
+                    <Button
+                        Classes="Menu">
+                        <Grid>
+                            <TextBlock
+                                Text="龙哥就是龙！！"
+                                Margin="8 0 0 2"/>
+                            <Image
+                                Source="/Assets/Images/arrow.png"
+                                Classes="Menu"/>
+                        </Grid>
+                    </Button>
+                    <Button
+                        Classes="Menu">
+                        <Grid>
+                            <TextBlock
+                                Text="奥利安费！"
+                                Margin="8 0 0 2"/>
+                            <Image
+                                Source="/Assets/Images/arrow.png"
+                                Classes="Menu"/>
+                        </Grid>
+                    </Button>
+                    <Button
+                        Classes="Menu">
+                        <Grid>
+                            <TextBlock
+                                Text="我不太认同"
+                                Margin="8 0 0 2"/>
+                            <Image
+                                Source="/Assets/Images/arrow.png"
+                                Classes="Menu"/>
+                        </Grid>
+                    </Button>
+                    <Button
+                        Classes="Menu">
+                        <Grid>
+                            <TextBlock
+                                Text="似！！"
+                                Margin="8 0 0 2"/>
+                            <Image
+                                Source="/Assets/Images/arrow.png"
+                                Classes="Menu"/>
+                        </Grid>
+                    </Button>
+                    <Button
+                        Classes="Menu">
+                        <Grid>
+                            <TextBlock
+                                Text="怎么这么菜啊"
+                                Margin="8 0 0 2"/>
+                            <Image
+                                Source="/Assets/Images/arrow.png"
+                                Classes="Menu"/>
+                        </Grid>
+                    </Button>
                 </StackPanel>
             </Border>
         </Grid>

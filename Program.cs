@@ -19,6 +19,54 @@ class Program
             .LogToTrace()
             .With(new FontManagerOptions
             {
-                DefaultFamilyName = "avares://Dual/Assets/Fonts/Alibaba_PuHuiTi_2.0_55_Regular_55_Regular.ttf#Alibaba PuHuiTi 2.0"
+                DefaultFamilyName = "avares://Dual/Assets/Fonts#Alibaba PuHuiTi 3.0",
+
+                FontFallbacks = new FontFallback[]
+                {
+                    new()
+                    {
+                        FontFamily = "avares://Dual/Assets/Fonts/AlibabaPuHuiTi-3-35-Thin.otf#Alibaba PuHuiTi 3.0"
+                    },
+
+                    new()
+                    {
+                        FontFamily = "avares://Dual/Assets/Fonts/AlibabaPuHuiTi-3-45-Light.otf#Alibaba PuHuiTi 3.0"
+                    },
+
+                    new()
+                    {
+                        FontFamily = "avares://Dual/Assets/Fonts/AlibabaPuHuiTi-3-55-Regular.otf#Alibaba PuHuiTi 3.0"
+                    },
+
+                    new()
+                    {
+                        FontFamily = "avares://Dual/Assets/Fonts/AlibabaPuHuiTi-3-65-Medium.otf#Alibaba PuHuiTi 3.0"
+                    },
+
+                    new()
+                    {
+                        FontFamily = "avares://Dual/Assets/Fonts/AlibabaPuHuiTi-3-75-SemiBold.otf#Alibaba PuHuiTi 3.0"
+                    },
+
+                    new()
+                    {
+                        FontFamily = "avares://Dual/Assets/Fonts/AlibabaPuHuiTi-3-85-Bold.otf#Alibaba PuHuiTi 3.0"
+                    },
+
+                    new()
+                    {
+                        FontFamily = "avares://Dual/Assets/Fonts/AlibabaPuHuiTi-3-95-ExtraBold.otf#Alibaba PuHuiTi 3.0"
+                    },
+
+                    new()
+                    {
+                        FontFamily = "avares://Dual/Assets/Fonts/AlibabaPuHuiTi-3-105-Heavy.otf#Alibaba PuHuiTi 3.0"
+                    },
+
+                    new()
+                    {
+                        FontFamily = "avares://Dual/Assets/Fonts/AlibabaPuHuiTi-3-115-Black.otf#Alibaba PuHuiTi 3.0"
+                    }
+                }
             });
 }

@@ -3,6 +3,92 @@
              x:Class="Dual.App">
 
     <Application.Styles>
-        <FluentTheme Mode="Light"/>
+        <FluentTheme/>
+
+        <Style Selector="TextBlock.Title">
+            <Setter
+                Property="Foreground"
+                Value="White"/>
+            <Setter
+                Property="FontSize"
+                Value="25"/>
+            <Setter
+                Property="FontWeight"
+                Value="Bold"/>
+            <Setter
+                Property="Margin"
+                Value="80 30 0 10"/>
+        </Style>
+
+        <Style Selector="Button.Menu">
+            <Setter
+                Property="Background"
+                Value="Transparent"/>
+            <Setter
+                Property="Foreground"
+                Value="White"/>
+            <Setter
+                Property="Height"
+                Value="50"/>
+            <Setter
+                Property="MinWidth"
+                Value="180"/>
+            <Setter
+                Property="Margin"
+                Value="30 3 0 3"/>
+            <Setter
+                Property="FontSize"
+                Value="20"/>
+            <Setter
+                Property="FontWeight"
+                Value="Bold"/>
+            <Setter
+                Property="Tag"
+                Value="False"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate>
+                        <Border
+                            Background="{TemplateBinding Background}"
+                            CornerRadius="25">
+                            <ContentPresenter
+                                HorizontalAlignment="Stretch"
+                                VerticalAlignment="Center"
+                                Content="{TemplateBinding Content}"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style Selector="Button.Menu:pointerover">
+            <Setter
+                Property="Background"
+                Value="White"/>
+            <Setter
+                Property="Foreground"
+                Value="#64D7D8"/>
+            <Setter
+                Property="Tag"
+                Value="True"/>
+        </Style>
+
+        <Style Selector="Image.Menu">
+            <Setter
+                Property="HorizontalAlignment"
+                Value="Right"/>
+            <Setter
+                Property="VerticalAlignment"
+                Value="Center"/>
+            <Setter
+                Property="Margin"
+                Value="0 0 10 0"/>
+            <Setter
+                Property="Height"
+                Value="30"/>
+            <Setter
+                Property="IsVisible"
+                Value="{Binding $parent[1].Tag}"/>
+        </Style>
     </Application.Styles>
 </Application>

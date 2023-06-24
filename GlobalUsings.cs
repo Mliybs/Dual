@@ -33,12 +33,13 @@ global using Avalonia.Input.Raw;
 global using Avalonia.Input.TextInput;
 
 global using Avalonia.Data;
+global using Avalonia.Styling;
 global using Avalonia.Media;
 global using Avalonia.Media.Fonts;
 global using Avalonia.Dialogs;
 global using Avalonia.Controls.Selection;
 global using Avalonia.Interactivity;
-global using Avalonia.Controls.Notifications;
+global using Avalonia.Controls.Presenters;
 
 global using static Dual.Statics;
 
