@@ -55,10 +55,11 @@
                         Text="目录"
                         Classes="Title"/>
                     <Button
-                        Classes="Menu">
+                        Click="MenuButtonEvent"
+                        Classes="Menu Button1">
                         <Grid>
                             <TextBlock
-                                Text="我超！冰！"
+                                Text="主页"
                                 Margin="8 0 0 2"/>
                             <Image
                                 Source="/Assets/Images/arrow.png"
@@ -66,7 +67,8 @@
                         </Grid>
                     </Button>
                     <Button
-                        Classes="Menu">
+                        Click="MenuButtonEvent"
+                        Classes="Menu Button2">
                         <Grid>
                             <TextBlock
                                 Text="龙哥就是龙！！"
@@ -77,7 +79,8 @@
                         </Grid>
                     </Button>
                     <Button
-                        Classes="Menu">
+                        Click="MenuButtonEvent"
+                        Classes="Menu Button3">
                         <Grid>
                             <TextBlock
                                 Text="奥利安费！"
@@ -88,7 +91,8 @@
                         </Grid>
                     </Button>
                     <Button
-                        Classes="Menu">
+                        Click="MenuButtonEvent"
+                        Classes="Menu Button4">
                         <Grid>
                             <TextBlock
                                 Text="我不太认同"
@@ -98,8 +102,24 @@
                                 Classes="Menu"/>
                         </Grid>
                     </Button>
+                    <TextBlock
+                        Text="设置"
+                        Classes="Title"/>
                     <Button
-                        Classes="Menu">
+                        Click="MenuButtonEvent"
+                        Classes="Menu Button5">
+                        <Grid>
+                            <TextBlock
+                                Text="我不知道"
+                                Margin="8 0 0 2"/>
+                            <Image
+                                Source="/Assets/Images/arrow.png"
+                                Classes="Menu"/>
+                        </Grid>
+                    </Button>
+                    <Button
+                        Click="MenuButtonEvent"
+                        Classes="Menu Button6">
                         <Grid>
                             <TextBlock
                                 Text="似！！"
@@ -110,10 +130,11 @@
                         </Grid>
                     </Button>
                     <Button
-                        Classes="Menu">
+                        Click="MenuButtonEvent"
+                        Classes="Menu Button7">
                         <Grid>
                             <TextBlock
-                                Text="怎么这么菜啊"
+                                Text="我的"
                                 Margin="8 0 0 2"/>
                             <Image
                                 Source="/Assets/Images/arrow.png"
@@ -122,6 +143,30 @@
                     </Button>
                 </StackPanel>
             </Border>
+
+            <!-- 主界面 -->
+            <StackPanel
+                Grid.Column="1"
+                Background="White"
+                Margin="40 30 10 0">
+                <TextBox
+                    Name="SearchBox"
+                    Width="150"
+                    KeyDown="Search"
+                    Foreground="#BBB"
+                    Background="Transparent"
+                    CornerRadius="10"
+                    HorizontalAlignment="Left"
+                    FontWeight="SemiBold"
+                    Watermark="铸币吧怎么这么菜啊"/>
+                <TextBlock
+                    Text="主页"
+                    Name="MainTitle"/>
+                <TextBlock
+                    Text="冰！！！"
+                    FontWeight="Bold"
+                    FontSize="20"/>
+            </StackPanel>
         </Grid>
     </Border>
 </Window>

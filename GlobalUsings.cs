@@ -40,6 +40,7 @@ global using Avalonia.Dialogs;
 global using Avalonia.Controls.Selection;
 global using Avalonia.Interactivity;
 global using Avalonia.Controls.Presenters;
+global using Avalonia.VisualTree;
 
 global using static Dual.Statics;
 
